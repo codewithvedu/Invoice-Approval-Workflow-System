@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Approval Workflow System</title>
+    <link rel="icon" href="images/final.png" sizes="80x80" type="image/png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/signup.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navibar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="main_page.html">
+                <img src="images/final.png" id="logo" alt="Invoicelyzer Logo">
+                <span id="heading">Invoicelyzer.com</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    style="background-color: #673AB7; border: 2px solid #B39DDB;">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="nav-links">
+                    <a href="main_page.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="log_in.html">Log In</a>
+                    <a href="payment.html">Apply</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign Up Form -->
+    <div class="container signup-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <div class="slot">
+                    <h1 class="text-center heading-title">Sign Up</h1>
+                    <form id="signupform">
+                        <div class="form-content">
+                            <input type="text" id="username" class="input-container" placeholder="Enter Username" required>
+                            <input type="email" id="email" class="input-container" placeholder="Enter Email-Id" required>
+                            <input type="password" id="password" class="input-container" placeholder="Enter Password" required>
+                            <input type="password" id="confirm_password"  class="input-container" placeholder="Confirm Password" required>
+                            <button id="button-container" type="submit">Submit</button>
+                            <p class="thank-you-text">Hey, Thanks For Signing Up, We Hope You Will Enjoy Our Service !</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    background-image: url(../space.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite AU TAS", cursive;
+}
+
+#navibar {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
+
+#logo {
+    width: 90px;
+    height: 80px;
+    border-radius: 20%;
+    background-color: white;
+}
+
+#heading {
+    font-size: 30px;
+    color: #EEEEEE;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 5px 10px;
+    border: 2px solid #B39DDB;
+    border-radius: 35px;
+    background-color: #673AB7;
+    color: aliceblue;
+    text-decoration: none;
+    transition: background 300ms;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background: #4A148C;
+    color: white;
+}
+
+#head1 {
+    padding-top: 120px;
+    text-align: center;
+    color: white;
+}
+
+.slot {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 500px;
+    background-color: rgba(106, 27, 154, 0.6);
+    padding: 25px 0;
+}
+
+.photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20%;
+    border: 2px solid white;
+    margin: 25px auto;
+    display: block;
+}
+
+.content-box {
+    font-size: 30px;
+    color: #EEEEEE;
+    padding: 20px;
+}
+
+.content-box h2 {
+    margin-bottom: 20px;
+}
+
+.content-box p, .content-box ul {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.icon-box {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.icon-box img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 70px;
+}
+
+#reason {
+    text-align: center;
+    font-size: 24px;
+    color: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #heading {
+        font-size: 20px;
+    }
+
+    .content-box {
+        font-size: 20px;
+    }
+
+    .content-box h2 {
+        font-size: 24px;
+    }
+
+    #head1 h1 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 10px 15px;
+        margin: 5px;
+    }
+
+    #reason {
+        font-size: 18px;
+    }
+}

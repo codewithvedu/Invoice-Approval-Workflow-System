@@ -1,0 +1,243 @@
+* {
+    font-family: "Playwrite AU TAS", cursive;
+    color: #EEEEEE;
+}
+
+body {
+    background-image: url(../space.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+#navibar {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
+
+#logo {
+    width: 90px;
+    height: 80px;
+    border-radius: 20%;
+    background-color: white;
+}
+
+#heading {
+    font-size: 30px;
+    color: #EEEEEE;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    padding: 15px 20px;
+    margin: 5px 10px;
+    border: 2px solid #B39DDB;
+    border-radius: 35px;
+    background-color: #673AB7;
+    color: aliceblue;
+    text-decoration: none;
+    transition: background 300ms;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background: #4A148C;
+    color: white;
+}
+
+.apply-container {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.slot {
+    width: 100%;
+    min-height: 600px;
+    background-color: rgba(106, 27, 154, 0.6);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.heading-title {
+    font-family: "Playwrite AU TAS", cursive;
+    color: #EEEEEE;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container {
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    color: white;
+    font-family: "Playwrite AU TAS", cursive;
+    font-size: 20px;
+    border-radius: 40px;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+::placeholder {
+    text-align: center;
+    color: white;
+    font-family: "Playwrite AU TAS", cursive;
+}
+
+.file-upload {
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.file-upload input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.custom-file-label {
+    display: inline-block;
+    background-color: #673AB7;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-family: "Playwrite AU TAS", cursive;
+    font-size: 16px;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+.custom-file-label:hover {
+    background: #4A148C;
+    color: white;
+}
+
+#file-name {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#button-container {
+    margin-top: 30px;
+    width: 40%;
+    height: 50px;
+    background: #673AB7;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: "Playwrite AU TAS", cursive;
+    border: 2px solid white;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+#button-container:hover {
+    background: #4A148C;
+}
+
+.signup-text {
+    margin-top: 20px;
+    color: #EEEEEE;
+}
+
+#sign {
+    text-decoration: none;
+    color: bisque;
+}
+
+#sign:hover {
+    color: white;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    #heading {
+        font-size: 20px;
+    }
+
+    .heading-title {
+        font-size: 24px;
+    }
+
+    .apply-container {
+        padding-top: 130px;
+    }
+
+    .input-container {
+        width: 85%;
+        font-size: 16px;
+        height: 35px;
+    }
+
+    .file-upload {
+        width: 85%;
+    }
+
+    .custom-file-label {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #button-container {
+        width: 60%;
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 10px 15px;
+        margin: 5px;
+    }
+
+    .slot {
+        min-height: 550px;
+        padding: 20px 10px;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 576px) {
+    .input-container {
+        width: 90%;
+    }
+
+    .file-upload {
+        width: 90%;
+    }
+
+    #button-container {
+        width: 70%;
+    }
+}
